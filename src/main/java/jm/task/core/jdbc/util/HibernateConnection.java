@@ -11,6 +11,7 @@ public class HibernateConnection {
             return new Configuration().configure("hibernate.cfg.xml")
                     .buildSessionFactory();
         } catch (Throwable e) {
+            System.out.println("Не удалось создать фабрику сессий");
             throw new ExceptionInInitializerError(e);
         }
     }

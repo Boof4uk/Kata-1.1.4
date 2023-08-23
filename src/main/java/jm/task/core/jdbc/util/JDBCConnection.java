@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class Util {
+public class JDBCConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/firstdbforidea";
     private static final String LOGIN = "root";
     private static final String PASS = "1234";
