@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class Util {
     private static final String URL = "jdbc:mysql://localhost:3306/firstdbforidea";
     private static final String LOGIN = "root";
-    private static final String PASS = "asdfrewq11234";
+    private static final String PASS = "1234";
     // реализуйте настройку соеденения с БД
     public static Connection getConnection() {
         Connection connection = null;
