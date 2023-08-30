@@ -14,7 +14,7 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
     public void createUsersTable() {
-        String sql = "create table users" +
+        String sql = "CREATE TABLE IF NOT EXISTS users" +
                 "(" +
                 "    id       int auto_increment" +
                 "        primary key," +
@@ -31,7 +31,7 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
     public void dropUsersTable() {
-        String sql = "DROP TABLE users";
+        String sql = "DROP TABLE IF EXISTS users";
         try(Connection connection = Util.getConnection(); Statement statement = connection.createStatement()) {
             statement.execute(sql);
             System.out.println("Таблица удалена");
